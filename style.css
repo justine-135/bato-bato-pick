@@ -1,0 +1,154 @@
+* {
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: "Roboto", sans-serif;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 90vh;
+	width: 80%;
+	margin: auto;
+	padding: 1rem 1rem;
+}
+
+.computer-section {
+	min-height: 180px;
+	min-width: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 200ms ease;
+}
+
+.indication {
+	min-height: 30px;
+	font-size: 1.8rem;
+	border: 1px solid gray;
+	border-radius: 20px;
+	width: 100%;
+}
+
+.user-section {
+	min-height: 180px;
+	min-width: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3.2rem;
+	transition: 200ms ease;
+}
+
+.pick {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	min-width: 20%;
+	margin: auto;
+	bottom: 5%;
+}
+
+.pick button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3.2rem;
+	border: none;
+	border-radius: 50%;
+	background-color: transparent;
+}
+
+.computer-score {
+	height: 100px;
+	width: 100px;
+	color: rgb(236, 63, 63);
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	font-size: 3.2rem;
+}
+
+.user-score {
+	height: 100px;
+	width: 100px;
+	color: rgb(63, 109, 236);
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	font-size: 3.2rem;
+}
+
+.timer {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	font-size: 3.2rem;
+}
+
+.indication {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rock-img {
+	height: 100px;
+	width: 120px;
+	background-color: transparent;
+	border-radius: 50%;
+	transform: rotate(-90deg);
+}
+.computer-section img {
+	transform: rotate(0deg);
+}
+
+.user-section img {
+	transform: rotate(0deg);
+}
+
+.big-letters {
+	position: absolute;
+	z-index: -1;
+	opacity: 0.5;
+	display: none;
+}
+
+.big-letters h1 {
+	text-transform: uppercase;
+	font-size: 16.4rem;
+}
+
+@media screen and (max-width: 768px) {
+	.user-score {
+		top: 5%;
+		left: 5%;
+	}
+	.timer {
+		display: none;
+	}
+	.big-letters {
+		display: block;
+	}
+}
